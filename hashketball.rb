@@ -1,13 +1,5 @@
 require 'pry'
 
-def points_for(player_name)
-  game_hash[:home_team][:players].each do |player|
-    if player[:name] == player_name
-      return player[:points]
-    end
-  end
-end
-
 def game_hash
   {
     home: {
