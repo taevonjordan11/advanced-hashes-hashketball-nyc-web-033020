@@ -168,7 +168,7 @@ def player_numbers(team_name)
       team.each do |stats, data|
         if stats == :players
           data.each do |player|
-           numbers_array << player[:number]
+           numbers_array.push player[:number]
           end
         end
       end
