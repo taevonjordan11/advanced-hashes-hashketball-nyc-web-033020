@@ -166,7 +166,7 @@ def player_numbers(team_name)
     if team[:team_name] == team_name
       team.each do |stats, data|
         if stats == :players
-          data.each do |players|
+          data.each do |player|
             player[:number]
           end
         end
