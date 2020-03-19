@@ -180,7 +180,7 @@ end
 def player_stats(players_name)
   le_hash = {}
   game_hash.each do |place, team|
-    team.each do |stats|
+    team.each do |stats, data|
       
     end
   end
