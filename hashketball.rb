@@ -167,6 +167,8 @@ def player_numbers(team_name)
       team.each do |stats, data|
         if stats == :players
           data.each do |players|
+            
+          end
         end
       end
     end
