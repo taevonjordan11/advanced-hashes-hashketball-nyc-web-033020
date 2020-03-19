@@ -196,5 +196,23 @@ def player_stats(players_name)
 end
 
 def big_shoe_rebounds
+  player_number_with_biggest_shoe = ""
+  biggest_shoe_size = 0
   
+  hashketball[:home][:players].each do |name, player|
+    if player[:shoe_size] > biggest_shoe_size
+      player_number_with_biggest_shoe = name
+      biggest_shoe_size = player[:shoe_size]
+    end
+  end
+  hashketball[:away][:players].each do |name, player|
+    if player[:shoe_size] > biggest_shoe_size
+      player_number_with_biggest_shoe = name
+      biggest_shoe_size = player[:shoe_size]
+    end
+  end
+  
+  " #{player_number_with_biggest_shoe} : #{biggest_shoe_size} "
 end
+
+puts biggest_shoe(hashketball)
