@@ -179,4 +179,5 @@ end
 
 def player_stats(players_name)
   le_hash = {}
+  game_hash.each 
 end
